@@ -298,7 +298,7 @@ function VulnAD-PublicSMBShare {
 } 
 
 function VulnAD-DisableWindowsDefender {
-  Uninstall-WindowsFeature -Name Windows-Defender
+  	Uninstall-WindowsFeature -Name Windows-Defender
 }
 
 function Invoke-VulnAD {
