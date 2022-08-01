@@ -43,10 +43,14 @@ Install-ADDSForest -CreateDnsDelegation:$false -DatabasePath "C:\\Windows\\NTDS"
 ```
 
 ## if you already installed Active Directory, just run the script !
+- Enable Windows Defender
 ```
 IEX((new-object net.webclient).downloadstring("https://raw.githubusercontent.com/bypazs/vulnerable-AD-plus/master/vulnadplus.ps1"));
 ```
-
+- Disable Windows Defender
+```
+IEX((new-object net.webclient).downloadstring("https://raw.githubusercontent.com/bypazs/vulnerable-AD-plus/master/vulnadplusv1.1.ps1"));
+```
 ```
 Invoke-VulnAD -UsersLimit 20 -DomainName "bypazs.local"
 ```
